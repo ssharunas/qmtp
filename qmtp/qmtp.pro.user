@@ -1,0 +1,343 @@
+<!DOCTYPE QtCreatorProject>
+<qtcreator>
+ <data>
+  <variable>RunConfiguration0-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CommandLineArguments</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-ProFile</variable>
+  <value type="QString">qmtp.pro</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-RunConfiguration.name</variable>
+  <value type="QString">qmtp</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UseDyldImageSuffix</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetName</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetWorkingDirectory</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserWorkingDirectory</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-type</variable>
+  <value type="QString">Qt4ProjectManager.Qt4RunConfiguration</value>
+ </data>
+ <data>
+  <variable>activeRunConfiguration</variable>
+  <value type="int">0</value>
+ </data>
+ <data>
+  <variable>activebuildconfiguration</variable>
+  <value type="QString">0</value>
+ </data>
+ <data>
+  <variable>buildConfiguration-0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <value key="QtVersionId" type="int">0</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="addQDumper" type=""></value>
+   <value key="buildConfiguration" type="int">2</value>
+   <value key="buildDirectory" type="QString">/home/ssharunas/devel/qMyMtp/qmtp/bin</value>
+   <value key="clearSystemEnvironment" type="bool">false</value>
+   <value key="useShadowBuild" type="bool">true</value>
+   <valuelist key="userEnvironmentChanges" type="QVariantList"/>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildConfiguration-1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+   <value key="QtVersionId" type="int">0</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="addQDumper" type=""></value>
+   <value key="buildConfiguration" type="int">0</value>
+   <value key="buildDirectory" type="QString"></value>
+   <value key="clearSystemEnvironment" type="bool">false</value>
+   <value key="useShadowBuild" type="bool">false</value>
+   <valuelist key="userEnvironmentChanges" type="QVariantList"/>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-0-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">0</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-gShAoKW3Wt,guid=0c95cd36a7d1f75626dabab04b72cb05</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-MmUZXt/S.gpg-agent:1684:1</value>
+    <value type="QString">GS_LIB=/home/ssharunas/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/ssharunas/.gtkrc-2.0::/home/ssharunas/.kdemod4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/ssharunas/.gtkrc::/home/ssharunas/.kdemod4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/ssharunas</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">JAVA_HOME=/opt/java/jre</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=lt_LT.utf8</value>
+    <value type="QString">LC_COLLATE=C</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtcreator-1.3.0/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LOGNAME=ssharunas</value>
+    <value type="QString">MANPAGER=/usr/bin/most</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">PATH=/usr/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/opt/java/jre/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/ssharunas</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/ssharunas/.kdemod4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/NKLAN:@/tmp/.ICE-unix/1736,unix/NKLAN:/tmp/.ICE-unix/1736</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=1687</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-XTwmuf1686/agent.1686</value>
+    <value type="QString">USER=ssharunas</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=#kde_legacy#</value>
+    <value type="QString">XDG_CACHE_HOME=/home/ssharunas/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/ssharunas/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/ssharunas/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=3dd17c651bfc177d32f4e4cb4aeb260d-1265814272.128502-1864977466</value>
+    <value type="QString">XDM_MANAGED=method=classic,auto</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/home/ssharunas/devel/qMyMtp/qmtp/qmtp.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">linux-g++</value>
+    <value type="QString">-r</value>
+    <value type="QString">CONFIG+=debug</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/ssharunas/devel/qMyMtp/qmtp/bin</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-0-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">0</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-gShAoKW3Wt,guid=0c95cd36a7d1f75626dabab04b72cb05</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-MmUZXt/S.gpg-agent:1684:1</value>
+    <value type="QString">GS_LIB=/home/ssharunas/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/ssharunas/.gtkrc-2.0::/home/ssharunas/.kdemod4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/ssharunas/.gtkrc::/home/ssharunas/.kdemod4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/ssharunas</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">JAVA_HOME=/opt/java/jre</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=lt_LT.utf8</value>
+    <value type="QString">LC_COLLATE=C</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtcreator-1.3.0/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LOGNAME=ssharunas</value>
+    <value type="QString">MANPAGER=/usr/bin/most</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">PATH=/usr/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/opt/java/jre/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/ssharunas</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/ssharunas/.kdemod4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/NKLAN:@/tmp/.ICE-unix/1736,unix/NKLAN:/tmp/.ICE-unix/1736</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=1687</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-XTwmuf1686/agent.1686</value>
+    <value type="QString">USER=ssharunas</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=#kde_legacy#</value>
+    <value type="QString">XDG_CACHE_HOME=/home/ssharunas/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/ssharunas/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/ssharunas/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=3dd17c651bfc177d32f4e4cb4aeb260d-1265814272.128502-1864977466</value>
+    <value type="QString">XDM_MANAGED=method=classic,auto</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/ssharunas/devel/qMyMtp/qmtp/bin</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-0-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">0</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-gShAoKW3Wt,guid=0c95cd36a7d1f75626dabab04b72cb05</value>
+    <value type="QString">DESKTOP_SESSION=default</value>
+    <value type="QString">DISPLAY=:0.0</value>
+    <value type="QString">DM_CONTROL=/var/run/xdmctl</value>
+    <value type="QString">GPG_AGENT_INFO=/tmp/gpg-MmUZXt/S.gpg-agent:1684:1</value>
+    <value type="QString">GS_LIB=/home/ssharunas/.fonts</value>
+    <value type="QString">GTK2_RC_FILES=/etc/gtk-2.0/gtkrc:/home/ssharunas/.gtkrc-2.0::/home/ssharunas/.kdemod4/share/config/gtkrc-2.0</value>
+    <value type="QString">GTK_RC_FILES=/etc/gtk/gtkrc:/home/ssharunas/.gtkrc::/home/ssharunas/.kdemod4/share/config/gtkrc</value>
+    <value type="QString">G_BROKEN_FILENAMES=1</value>
+    <value type="QString">HISTCONTROL=erasedups</value>
+    <value type="QString">HISTSIZE=1000</value>
+    <value type="QString">HOME=/home/ssharunas</value>
+    <value type="QString">INPUTRC=/etc/inputrc</value>
+    <value type="QString">JAVA_HOME=/opt/java/jre</value>
+    <value type="QString">KDE_FULL_SESSION=true</value>
+    <value type="QString">KDE_MULTIHEAD=false</value>
+    <value type="QString">KDE_SESSION_UID=1000</value>
+    <value type="QString">KDE_SESSION_VERSION=4</value>
+    <value type="QString">LANG=lt_LT.utf8</value>
+    <value type="QString">LC_COLLATE=C</value>
+    <value type="QString">LD_LIBRARY_PATH=/opt/qtcreator-1.3.0/lib/qtcreator:</value>
+    <value type="QString">LESS=-R</value>
+    <value type="QString">LOGNAME=ssharunas</value>
+    <value type="QString">MANPAGER=/usr/bin/most</value>
+    <value type="QString">MOZ_PLUGIN_PATH=/usr/lib/mozilla/plugins</value>
+    <value type="QString">PATH=/usr/bin:/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/opt/java/jre/bin:/usr/bin/perlbin/site:/usr/bin/perlbin/vendor:/usr/bin/perlbin/core:/opt/qt/bin</value>
+    <value type="QString">PKG_CONFIG_PATH=/usr/lib/pkgconfig:/opt/qt/lib/pkgconfig</value>
+    <value type="QString">PS3=> </value>
+    <value type="QString">PS4=+ </value>
+    <value type="QString">PWD=/home/ssharunas</value>
+    <value type="QString">QTDIR=/usr/share/qt</value>
+    <value type="QString">QT_PLUGIN_PATH=/home/ssharunas/.kdemod4/lib/kde4/plugins/:/usr/lib/kde4/plugins/</value>
+    <value type="QString">QT_XFT=true</value>
+    <value type="QString">SESSION_MANAGER=local/NKLAN:@/tmp/.ICE-unix/1736,unix/NKLAN:/tmp/.ICE-unix/1736</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AGENT_PID=1687</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/ssh-XTwmuf1686/agent.1686</value>
+    <value type="QString">USER=ssharunas</value>
+    <value type="QString">WINDOWPATH=7</value>
+    <value type="QString">XCURSOR_THEME=#kde_legacy#</value>
+    <value type="QString">XDG_CACHE_HOME=/home/ssharunas/.cache</value>
+    <value type="QString">XDG_CONFIG_DIRS=/etc/xdg</value>
+    <value type="QString">XDG_CONFIG_HOME=/home/ssharunas/.config</value>
+    <value type="QString">XDG_DATA_DIRS=/usr/share:/usr/local/share</value>
+    <value type="QString">XDG_DATA_HOME=/home/ssharunas/.local/share</value>
+    <value type="QString">XDG_SESSION_COOKIE=3dd17c651bfc177d32f4e4cb4aeb260d-1265814272.128502-1864977466</value>
+    <value type="QString">XDM_MANAGED=method=classic,auto</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/home/ssharunas/devel/qMyMtp/qmtp/bin</value>
+   <value key="makeCmd" type="QString">make</value>
+   <valuelist key="makeargs" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-1-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-1-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-1-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">1</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfigurations</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">0</value>
+   <value type="QString">1</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildsteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.qmake</value>
+   <value type="QString">trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>cleansteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>defaultFileEncoding</variable>
+  <value type="QByteArray">System</value>
+ </data>
+ <data>
+  <variable>project</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+</qtcreator>

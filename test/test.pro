@@ -18,7 +18,7 @@ for(i, OTHER_SOURCES):SOURCES += "../qmtp/"$${i}
 CONFIG += qtestlib
 TEMPLATE = app
 
-LIBS += -lmtp
+DEFINES += -Wno-unused-parameter
 
 message($$LIBS)
 

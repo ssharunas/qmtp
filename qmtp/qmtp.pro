@@ -24,7 +24,8 @@ HEADERS += qmtp.h \
     meta/qmtpalbuminfo.h \
     meta/qmtpplaylistinfo.h \
     collections/qmtpstoragecollection.h \
-	collections/qmtpcollectionservice.h
+    collections/qmtpcollectiontmpl.h \
+    collections/qmtpscaningcollectiontmpl.h
 SOURCES += qmtp.cpp \
     qmtpdevice.cpp \
     identifiable/qmtpobject.cpp \
@@ -50,5 +51,5 @@ SOURCES += qmtp.cpp \
     meta/qmtpmetainfo.cpp \
     meta/qmtpalbuminfo.cpp \
     meta/qmtpplaylistinfo.cpp \
-    collections/qmtpstoragecollection.cpp \
-	collections/qmtpcollectionservice.cpp
+    collections/qmtpstoragecollection.cpp
+LIBS += -lmtp

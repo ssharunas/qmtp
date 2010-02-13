@@ -16,6 +16,7 @@ public:
 public:
 	virtual void Add(QMtpIdentifiable*) = 0;
 	virtual void Clear() = 0;
+	virtual void Destroy() = 0;
 	//virtual QList<QMtpIdentifiable *> getAll();
 
 };

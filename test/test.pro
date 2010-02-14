@@ -20,9 +20,7 @@ TEMPLATE = app
 
 DEFINES += -Wno-unused-parameter
 
-message($$LIBS)
-
-INCLUDEPATH += /home/ssharunas/Desktop/ssharunas/devel/qMyMtp/qmtp
+INCLUDEPATH += ../qmtp
 
 # Input
 HEADERS += qmtptest.h
@@ -30,3 +28,4 @@ SOURCES += qmtptest.cpp
 
 
 message($$LIBS)
+message($$INCLUDEPATH)

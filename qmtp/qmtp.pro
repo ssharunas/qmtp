@@ -44,10 +44,6 @@ SOURCES += qmtp.cpp \
     qmtpscannable.cpp \
     collections/qmtpcollection.cpp \
     collections/qmtpfoldercollection.cpp \
-    collections/qmtpfilecollection.cpp \
-    collections/qmtptrackcollection.cpp \
-    collections/qmtpalbumcollection.cpp \
-    collections/qmtpplaylistcollection.cpp \
     meta/qmtpmetainfo.cpp \
     meta/qmtpalbuminfo.cpp \
     meta/qmtpplaylistinfo.cpp \

@@ -8,6 +8,7 @@
 #include "collections/qmtpfoldercollection.h"
 #include "collections/qmtpplaylistcollection.h"
 #include "collections/qmtptrackcollection.h"
+#include "identifiable/qmtpfolder.h"
 
 #include <libmtp.h>
 

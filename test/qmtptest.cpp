@@ -6,7 +6,7 @@
 void QMtpTest::initTestCase(){
 	qmtp = new QMtp();
 	QVERIFY(qmtp != NULL);
-	QVERIFY(qmtp->ScanDevices() == QMtp::NoError);
+	QCOMPARE(qmtp->ScanDevices(), QMtp::NoError);
 }
 
 void QMtpTest::devicesTest(){

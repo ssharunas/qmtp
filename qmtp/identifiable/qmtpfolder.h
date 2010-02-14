@@ -10,6 +10,13 @@ public:
     QMtpFolder();
 	virtual ~QMtpFolder();
 
+
+	virtual void ScanFiles(QMtpCollection *collection);
+	virtual void ScanAlbums(QMtpCollection *collection);
+	virtual void ScanPlaylists(QMtpCollection *collection);
+	virtual void ScanFolders(QMtpCollection *collection);
+	virtual void ScanTracks(QMtpCollection *collection);
+
 private:
 
 };

@@ -18,7 +18,7 @@ for(i, OTHER_SOURCES):SOURCES += "../qmtp/"$${i}
 CONFIG += qtestlib
 TEMPLATE = app
 
-DEFINES += -Wno-unused-parameter
+#DEFINES += -Wno-unused-parameter
 
 INCLUDEPATH += ../qmtp
 
@@ -26,6 +26,6 @@ INCLUDEPATH += ../qmtp
 HEADERS += qmtptest.h
 SOURCES += qmtptest.cpp
 
+CONFIG -= gui
 
-message($$LIBS)
-message($$INCLUDEPATH)
+#message($$LIBS)

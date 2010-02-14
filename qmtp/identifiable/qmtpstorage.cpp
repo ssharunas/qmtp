@@ -48,7 +48,7 @@ QString QMtpStorage::volumeIdentifier(){
 void QMtpStorage::ScanFiles(QMtpCollection *collection){
 	files.Destroy();
 
-	QMtpFileCollection *newFiles = dynamic_cast<QMtpFileCollection*>collection;
+	QMtpFileCollection *newFiles = dynamic_cast<QMtpFileCollection*>(collection);
 	if(newFiles != NULL){
 		QList<QMtpFile*> list = newFiles->getAll();
 		for(int i = 0; i < list.count(); i++){
@@ -61,9 +61,9 @@ void QMtpStorage::ScanFiles(QMtpCollection *collection){
 void QMtpStorage::ScanAlbums(QMtpCollection *collection){
 	albums.Destroy();
 
-	QMtpAlbumCollection *newAlbums = dynamic_cast<QMtpAlbumCollection*>collection;
+	QMtpAlbumCollection *newAlbums = dynamic_cast<QMtpAlbumCollection*>(collection);
 	if(newAlbums != NULL){
-		QList<QMtpFile*> list = newAlbums->getAll();
+		QList<QMtpAlbum*> list = newAlbums->getAll();
 		for(int i = 0; i < list.count(); i++){
 			if(list[i]->storageID() == id())
 				albums.Add(list[i]);
@@ -74,9 +74,9 @@ void QMtpStorage::ScanAlbums(QMtpCollection *collection){
 void QMtpStorage::ScanPlaylists(QMtpCollection *collection){
 	playlists.Destroy();
 
-	QMtpPlaylistCollection *newPlaylists = dynamic_cast<QMtpPlaylistCollection*>collection;
+	QMtpPlaylistCollection *newPlaylists = dynamic_cast<QMtpPlaylistCollection*>(collection);
 	if(newPlaylists != NULL){
-		QList<QMtpFile*> list = newPlaylists->getAll();
+		QList<QMtpPlaylist*> list = newPlaylists->getAll();
 		for(int i = 0; i < list.count(); i++){
 			if(list[i]->storageID() == id())
 				playlists.Add(list[i]);
@@ -87,9 +87,9 @@ void QMtpStorage::ScanPlaylists(QMtpCollection *collection){
 void QMtpStorage::ScanFolders(QMtpCollection *collection){
 	folders.Destroy();
 
-	QMtpFolderCollection *newFolders = dynamic_cast<QMtpFolderCollection*>collection;
+	QMtpFolderCollection *newFolders = dynamic_cast<QMtpFolderCollection*>(collection);
 	if(newFolders != NULL){
-		QList<QMtpFile*> list = newFolders->getAll();
+		QList<QMtpFolder*> list = newFolders->getAll();
 		for(int i = 0; i < list.count(); i++){
 			if(list[i]->storageID() == id())
 				folders.Add(list[i]);
@@ -100,9 +100,9 @@ void QMtpStorage::ScanFolders(QMtpCollection *collection){
 void QMtpStorage::ScanTracks(QMtpCollection *collection){
 	tracks.Destroy();
 
-	QMtpTrackCollection *newTracks = dynamic_cast<QMtpTrackCollection*>collection;
+	QMtpTrackCollection *newTracks = dynamic_cast<QMtpTrackCollection*>(collection);
 	if(newTracks != NULL){
-		QList<QMtpFile*> list = newTracks->getAll();
+		QList<QMtpTrack*> list = newTracks->getAll();
 		for(int i = 0; i < list.count(); i++){
 			if(list[i]->storageID() == id())
 				tracks.Add(list[i]);

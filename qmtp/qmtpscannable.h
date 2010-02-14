@@ -2,6 +2,7 @@
 #define QMTPSCANNABLE_H
 
 class QMtpCollection;
+class QMtpIdentifiable;
 
 class QMtpScannable
 {

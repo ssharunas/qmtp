@@ -36,6 +36,9 @@ public:
 	virtual void ScanFolders(QMtpCollection *collection);
 	virtual void ScanTracks(QMtpCollection *collection);
 protected:
+	virtual bool filter(QMtpIdentifiable * object);
+
+protected:
 	unsigned int _storageType;
 	unsigned int _fileSystemType;
 	unsigned int _accessCapability;

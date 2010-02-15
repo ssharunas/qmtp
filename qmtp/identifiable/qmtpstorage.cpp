@@ -46,9 +46,29 @@ QString QMtpStorage::volumeIdentifier(){
 }
 
 bool QMtpStorage::filter(QMtpIdentifiable * object){
-	QMtpObject identifyabloObject = dynamic_cast<QMtpObject *>(object);
+	QMtpObject *identifyabloObject = dynamic_cast<QMtpObject *>(object);
 	if(identifyabloObject != NULL){
-		return identifyabloObject.storageID() == id();
+		return identifyabloObject->storageID() == id();
 	}
 	return false;
+}
+
+void QMtpStorage::ScanFiles(QMtpCollection *collection){
+	Scan(&files, collection);
+}
+
+void QMtpStorage::ScanAlbums(QMtpCollection *collection){
+	Scan(&albums, collection);
+}
+
+void QMtpStorage::ScanPlaylists(QMtpCollection *collection){
+	Scan(&playlists, collection);
+}
+
+void QMtpStorage::ScanFolders(QMtpCollection *collection){
+	Scan(&folders, collection);
+}
+
+void QMtpStorage::ScanTracks(QMtpCollection *collection){
+	Scan(&tracks, collection);
 }

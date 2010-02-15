@@ -17,6 +17,12 @@ public:
 	virtual void Add(QMtpIdentifiable*) = 0;
 	virtual void Clear() = 0;
 	virtual void Destroy() = 0;
+
+	virtual void begin();
+	virtual bool isEnd();
+	virtual void next();
+	virtual void prev();
+	QMtpIdentifiable * value();
 	//virtual QList<QMtpIdentifiable *> getAll();
 
 };

@@ -79,8 +79,41 @@ public:
 		}
 	}
 
-protected:
+	virtual void begin(){
+		if(itemsCollection != NULL){
+				outerIterator = itemsCollection->constBegin();
+		}
+	}
 
+	virtual bool isEnd(){
+		if(itemsCollection != NULL){
+			return outerIterator == itemsCollection->constEnd();
+		}
+		return true;
+	}
+
+	virtual void next(){
+		if(itemsCollection != NULL){
+			++outerIterator;
+		}
+	}
+
+	virtual void prev(){
+		if(itemsCollection != NULL){
+			--outerIterator;
+		}
+	}
+
+	QMtpIdentifiable * value(){
+		QMtpIdentifiable * value = NULL;
+		if(itemsCollection != NULL){
+			value = outerIterator.value();
+		}
+		return value;
+	}
+
+protected:
+	QHash<unsigned long, T *>::const_iterator outerIterator;
 	QHash<unsigned long, T *> *itemsCollection;
 
 };

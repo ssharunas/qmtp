@@ -16,6 +16,11 @@ public:
 	virtual void ScanFolders(QMtpCollection *collection);
 	virtual void ScanTracks(QMtpCollection *collection);
 
+public:
+
+	virtual bool filter(QMtpIdentifiable * object);
+	void Scan(QMtpCollection *old, QMtpCollection *collection);
+
 };
 
 #endif // QMTPSCANNABLE_H

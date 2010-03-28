@@ -9,10 +9,15 @@ class QMtpDataObject : public QMtpObject
 public:
     QMtpDataObject();
 
+public:
+	unsigned long long  size();
+	QDateTime modification();
+	int type();
+
 protected:
 	unsigned long long _size;
-	QDate _modification;
-	int type;
+	QDateTime _modification;
+	int _type;
 };
 
 #endif // QMTPDATAOBJECT_H

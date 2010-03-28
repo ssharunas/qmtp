@@ -167,6 +167,14 @@ QString QMtpDevice::friendlyName(){
 	return _friendlyName;
 }
 
+QList<QMtpStorage *> QMtpDevice::storages(){
+	return _storages.getAll();
+}
+
+QList<QMtpFile *> QMtpDevice::files(){
+	return _files.getAll();
+}
+
 int QMtpDevice::ScanStorages(){
 
 	_storages.Destroy();
@@ -181,5 +189,27 @@ int QMtpDevice::ScanStorages(){
 		}
 	}
 
+	//LIBMTP_Release_Device_List();
+
+	return 0;
+}
+int QMtpDevice::ScanFiles(){
+
+	_files.Destroy();
+
+	if(device){
+		LIBMTP_file_t *filelist = NULL, *tmp = NULL;
+		filelist = LIBMTP_Get_Filelisting_With_Callback(device, NULL, NULL);
+
+		while(filelist != NULL){
+			tmp = filelist;
+			filelist = filelist->next;
+
+			_files.Add(new QMtpFile(tmp));
+			LIBMTP_destroy_file_t(tmp);
+		}
+	}
+
+	_storages.ScanFiles(&_files);
 	return 0;
 }

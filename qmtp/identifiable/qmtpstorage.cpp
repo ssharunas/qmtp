@@ -10,6 +10,7 @@ QMtpStorage::QMtpStorage(LIBMTP_devicestorage_t * storage)
 		_freeSpaceInBytes = storage->FreeSpaceInBytes;
 		_freeSpaceInObjects = storage->FreeSpaceInObjects;
 		_description = QString::fromUtf8(storage->StorageDescription);
+		_id = storage->id;
 		_volumeIdentifier = QString::fromUtf8(storage->VolumeIdentifier);
 	}
 }
@@ -23,7 +24,7 @@ unsigned int QMtpStorage::fileSystemType(){
 }
 
 unsigned int QMtpStorage::accessCapability(){
-	return accessCapability();
+	return _accessCapability;
 }
 
 unsigned long long QMtpStorage::maxCapacity(){
@@ -48,27 +49,27 @@ QString QMtpStorage::volumeIdentifier(){
 bool QMtpStorage::filter(QMtpIdentifiable * object){
 	QMtpObject *identifyabloObject = dynamic_cast<QMtpObject *>(object);
 	if(identifyabloObject != NULL){
-		return identifyabloObject->storageID() == id();
+		return identifyabloObject->storageID() == _id;
 	}
 	return false;
 }
 
 void QMtpStorage::ScanFiles(QMtpCollection *collection){
-	Scan(&files, collection);
+	Scan(&_files, collection);
 }
 
 void QMtpStorage::ScanAlbums(QMtpCollection *collection){
-	Scan(&albums, collection);
+	Scan(&_albums, collection);
 }
 
 void QMtpStorage::ScanPlaylists(QMtpCollection *collection){
-	Scan(&playlists, collection);
+	Scan(&_playlists, collection);
 }
 
 void QMtpStorage::ScanFolders(QMtpCollection *collection){
-	Scan(&folders, collection);
+	Scan(&_folders, collection);
 }
 
 void QMtpStorage::ScanTracks(QMtpCollection *collection){
-	Scan(&tracks, collection);
+	Scan(&_tracks, collection);
 }

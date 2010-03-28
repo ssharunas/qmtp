@@ -35,6 +35,12 @@ public:
 	virtual void ScanPlaylists(QMtpCollection *collection);
 	virtual void ScanFolders(QMtpCollection *collection);
 	virtual void ScanTracks(QMtpCollection *collection);
+
+	QList<QMtpFile *> files(){
+		return _files.getAll();
+	}
+
+
 protected:
 	virtual bool filter(QMtpIdentifiable * object);
 
@@ -50,11 +56,11 @@ protected:
 
 private:
 
-	QMtpFolderCollection folders;
-	QMtpFileCollection files;
-	QMtpTrackCollection tracks;
-	QMtpAlbumCollection albums;
-	QMtpPlaylistCollection playlists;
+	QMtpFolderCollection _folders;
+	QMtpFileCollection _files;
+	QMtpTrackCollection _tracks;
+	QMtpAlbumCollection _albums;
+	QMtpPlaylistCollection _playlists;
 };
 
 #endif // QMTPSTORAGE_H

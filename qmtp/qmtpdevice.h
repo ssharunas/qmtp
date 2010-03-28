@@ -3,7 +3,9 @@
 
 #include "libmtp.h"
 #include "collections/qmtpstoragecollection.h"
+#include "collections/qmtpfilecollection.h"
 #include <QString>
+#include <QList>
 
 class QMtpDevice
 {
@@ -22,6 +24,7 @@ public:
 	unsigned long defaultTextFolder();
 
 	int ScanStorages();
+	int ScanFiles();
 
 	unsigned char currentBatteryLevel();
 
@@ -37,10 +40,14 @@ public:
 	void ReScanDeviceVersion();
 	void ReScanFriendlyName();
 
+	QList<QMtpStorage *> storages();
+	QList<QMtpFile *> files();
+
 private:
 	LIBMTP_mtpdevice_t* device;
 
 	QMtpStorageCollection _storages;
+	QMtpFileCollection _files;
 
 private:
 	QString _manufacturer;

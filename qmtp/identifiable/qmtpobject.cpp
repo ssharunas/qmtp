@@ -10,3 +10,7 @@ unsigned long QMtpObject::parentID(){
 unsigned long QMtpObject::storageID(){
 	return _storageID;
 }
+
+QString QMtpObject::name(){
+	return _name;
+}

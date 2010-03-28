@@ -2,11 +2,12 @@
 #define QMTPTRACK_H
 
 #include "qmtpdataobject.h"
+#include <libmtp.h>
 
 class QMtpTrack : public QMtpDataObject
 {
 public:
-    QMtpTrack();
+	QMtpTrack(LIBMTP_track_t *);
 
 protected:
 	QString title;

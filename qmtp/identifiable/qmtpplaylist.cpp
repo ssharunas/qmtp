@@ -1,5 +1,6 @@
 #include "qmtpplaylist.h"
 
-QMtpPlaylist::QMtpPlaylist()
+QMtpPlaylist::QMtpPlaylist(LIBMTP_playlist_t * playlist)
 {
+	(void)playlist;
 }

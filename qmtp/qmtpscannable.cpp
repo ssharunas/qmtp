@@ -11,6 +11,10 @@ void QMtpScannable::ScanPlaylists(QMtpCollection *){}
 void QMtpScannable::ScanFolders(QMtpCollection *){}
 void QMtpScannable::ScanTracks(QMtpCollection *){}
 
+bool QMtpScannable::filter(QMtpIdentifiable *){
+	return true;
+}
+
 void QMtpScannable::Scan(QMtpCollection *old, QMtpCollection *collection){
 	if(old != NULL){
 		old->Destroy();

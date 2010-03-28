@@ -18,11 +18,11 @@ public:
 	virtual void Clear() = 0;
 	virtual void Destroy() = 0;
 
-	virtual void begin();
-	virtual bool isEnd();
-	virtual void next();
-	virtual void prev();
-	QMtpIdentifiable * value();
+	virtual void begin() = 0;
+	virtual bool isEnd() = 0;
+	virtual void next() = 0;
+	virtual void prev() = 0;
+	virtual QMtpIdentifiable * value() = 0;
 	//virtual QList<QMtpIdentifiable *> getAll();
 
 };

@@ -1,5 +1,6 @@
 #include "qmtptrack.h"
 
-QMtpTrack::QMtpTrack()
+QMtpTrack::QMtpTrack(LIBMTP_track_t * track)
 {
+	(void)track;
 }

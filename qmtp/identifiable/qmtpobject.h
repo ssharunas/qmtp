@@ -16,11 +16,12 @@ public:
 
 	unsigned long parentID();
 	unsigned long storageID();
+	QString name();
 
 protected:
 	unsigned long _parentID;
 	unsigned long _storageID;
-	QString name;
+	QString _name;
 };
 
 #endif // QMTPOBJECT_H

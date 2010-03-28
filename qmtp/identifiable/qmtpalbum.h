@@ -3,16 +3,17 @@
 
 #include "qmtpupdatablecontainer.h"
 #include <QList>
+#include <libmtp.h>
 
 class QMtpAlbum : public QMtpUpdatableContainer
 {
 public:
-    QMtpAlbum();
+	QMtpAlbum(LIBMTP_album_t *);
 
 protected:
-	QString artist;
-	QString composer;
-	QString genre;
+	QString _artist;
+	QString _composer;
+	QString _genre;
 	QList<unsigned int> _tracksFilter;
 
 private:

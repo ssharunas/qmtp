@@ -8,9 +8,15 @@
 class QMtpTest : public QObject
 {
 	Q_OBJECT
-private slots:
+
+public slots:
+
 	void initTestCase();
 	void devicesTest();
+	void verboseFilesTest();
+	void storagesTest();
+private slots:
+	void filesTest();
 
 private:
 	QMtp *qmtp;

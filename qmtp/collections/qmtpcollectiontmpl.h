@@ -7,7 +7,7 @@
 template <class T> class QMtpCollectionTmpl : public QMtpCollection
 {
 public:
-	QMtpCollectionTmpl(){}
+	QMtpCollectionTmpl() : itemsCollection(NULL) {}
 
 	/**
 	  Comes from QMtpCollectionTmpl. Adds identifyable object to the collection.
@@ -49,7 +49,10 @@ public:
 	  contining objects.
 	  */
 	virtual void Destroy(){
-		QList<T *> list = itemsCollection->values();
+		QList<T *> list;
+		if(itemsCollection != NULL)
+			if(!itemsCollection->isEmpty())
+				list = itemsCollection->values();
 		Clear();
 
 		while(list.count()){
@@ -104,7 +107,7 @@ public:
 		}
 	}
 
-	QMtpIdentifiable * value(){
+	virtual QMtpIdentifiable * value(){
 		QMtpIdentifiable * value = NULL;
 		if(itemsCollection != NULL){
 			value = outerIterator.value();
@@ -113,7 +116,7 @@ public:
 	}
 
 protected:
-	QHash<unsigned long, T *>::const_iterator outerIterator;
+	typename QHash<unsigned long, T *>::const_iterator outerIterator;
 	QHash<unsigned long, T *> *itemsCollection;
 
 };

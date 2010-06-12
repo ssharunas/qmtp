@@ -40,6 +40,13 @@ public:
 		return _files.getAll();
 	}
 
+	QList<QMtpTrack *> tracks(){
+		return _tracks.getAll();
+	}
+
+	QList<QMtpFolder *> folders(){
+		return _folders.getAll();
+	}
 
 protected:
 	virtual bool filter(QMtpIdentifiable * object);

@@ -175,7 +175,15 @@ QList<QMtpFile *> QMtpDevice::files(){
 	return _files.getAll();
 }
 
-int QMtpDevice::ScanStorages(){
+QList<QMtpTrack *> QMtpDevice::tracks(){
+	return _tracks.getAll();
+}
+
+QList<QMtpFolder *> QMtpDevice::folders(){
+	return _folders.getAll();
+}
+
+void QMtpDevice::ScanStorages(){
 
 	_storages.Destroy();
 
@@ -191,9 +199,11 @@ int QMtpDevice::ScanStorages(){
 
 	//LIBMTP_Release_Device_List();
 
-	return 0;
+	_storages.ScanFiles(&_files);
+	_storages.ScanFolders(&_folders);
+	_storages.ScanTracks(&_tracks);
 }
-int QMtpDevice::ScanFiles(){
+void QMtpDevice::ScanFiles(){
 
 	_files.Destroy();
 
@@ -211,5 +221,47 @@ int QMtpDevice::ScanFiles(){
 	}
 
 	_storages.ScanFiles(&_files);
-	return 0;
+	_folders.ScanFiles(&_files);
+}
+void QMtpDevice::ScanTracks(){
+
+	_tracks.Destroy();
+
+	if(device){
+		LIBMTP_track_t *tracklist = NULL, *tmp = NULL;
+		tracklist = LIBMTP_Get_Tracklisting_With_Callback(device, NULL, NULL);
+
+		while(tracklist != NULL){
+			tmp = tracklist;
+			tracklist = tracklist->next;
+
+			_tracks.Add(new QMtpTrack(tmp));
+			LIBMTP_destroy_track_t(tmp);
+		}
+	}
+
+	_storages.ScanTracks(&_tracks);
+	_folders.ScanTracks(&_tracks);
+}
+void QMtpDevice::ScanFolders(){
+	_folders.Destroy();
+
+	if(device){
+		LIBMTP_folder_t* folders = LIBMTP_Get_Folder_List(device);
+		ReadFolders(folders);
+	}
+
+	_folders.ScanFiles(&_files);
+	_folders.ScanTracks(&_tracks);
+	_folders.ScanFolders(&_folders);
+
+	_storages.ScanFolders(&_folders);
+}
+
+void QMtpDevice::ReadFolders(LIBMTP_folder_t * folder){
+	if(folder != 0){
+		_folders.Add(new QMtpFolder(folder));
+		ReadFolders(folder->child);
+		ReadFolders(folder->sibling);
+	}
 }

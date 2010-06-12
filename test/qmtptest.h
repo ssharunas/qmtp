@@ -15,8 +15,11 @@ public slots:
 	void devicesTest();
 	void verboseFilesTest();
 	void storagesTest();
-private slots:
 	void filesTest();
+	void tracksTest();
+private slots:
+
+	void foldersTest();
 
 private:
 	QMtp *qmtp;

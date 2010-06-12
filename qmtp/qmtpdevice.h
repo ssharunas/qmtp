@@ -4,6 +4,8 @@
 #include "libmtp.h"
 #include "collections/qmtpstoragecollection.h"
 #include "collections/qmtpfilecollection.h"
+#include "collections/qmtptrackcollection.h"
+#include "collections/qmtpfoldercollection.h"
 #include <QString>
 #include <QList>
 
@@ -23,8 +25,10 @@ public:
 	unsigned long defaultAlbumFolder();
 	unsigned long defaultTextFolder();
 
-	int ScanStorages();
-	int ScanFiles();
+	void ScanStorages();
+	void ScanFiles();
+	void ScanTracks();
+	void ScanFolders();
 
 	unsigned char currentBatteryLevel();
 
@@ -42,12 +46,19 @@ public:
 
 	QList<QMtpStorage *> storages();
 	QList<QMtpFile *> files();
+	QList<QMtpTrack *> tracks();
+	QList<QMtpFolder *> folders();
+
+private:
+	void ReadFolders(LIBMTP_folder_t * folder);
 
 private:
 	LIBMTP_mtpdevice_t* device;
 
 	QMtpStorageCollection _storages;
 	QMtpFileCollection _files;
+	QMtpTrackCollection _tracks;
+	QMtpFolderCollection _folders;
 
 private:
 	QString _manufacturer;

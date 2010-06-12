@@ -24,13 +24,26 @@ public:
 	virtual void ScanFolders(QMtpCollection *collection);
 	virtual void ScanTracks(QMtpCollection *collection);
 
+
+	QList<QMtpFile *> files(){
+		return _files.getAll();
+	}
+
+	QList<QMtpTrack *> tracks(){
+		return _tracks.getAll();
+	}
+
+	QList<QMtpFolder *> folders(){
+		return _folders.getAll();
+	}
+
 private:
 
-	QMtpFolderCollection folders;
-	QMtpFileCollection files;
-	QMtpTrackCollection tracks;
-	QMtpAlbumCollection albums;
-	QMtpPlaylistCollection playlists;
+	QMtpFolderCollection _folders;
+	QMtpFileCollection _files;
+	QMtpTrackCollection _tracks;
+	QMtpAlbumCollection _albums;
+	QMtpPlaylistCollection _playlists;
 };
 
 #endif // QMTPFOLDER_H

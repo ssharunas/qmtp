@@ -86,7 +86,6 @@ void QMtpTest::verboseFilesTest(){
 	}
 }
 
-
 void QMtpTest::filesTest(){
 	QVERIFY(qmtp->devicesCount() == 1);
 
@@ -108,6 +107,59 @@ void QMtpTest::filesTest(){
 		qDebug() << storages[i]->description()
 				<< "files:" <<
 				storages[i]->files().count();
+	}
+}
+
+void QMtpTest::tracksTest(){
+	QVERIFY(qmtp->devicesCount() == 1);
+
+	QMtpDevice *device = qmtp->device(0);
+	QVERIFY(device != NULL);
+
+	device->ScanStorages();
+	device->ScanTracks();
+
+	QList<QMtpTrack *> tracks = device->tracks();
+	QVERIFY(tracks.count() > 0);
+
+	qDebug() << "Device tracks:" << tracks.count();
+
+	QList<QMtpStorage *> storages = device->storages();
+	QVERIFY(storages.count() > 0);
+
+	for(int i = 0; i < storages.count(); i++){
+		qDebug() << storages[i]->description()
+				<< "files:" <<
+				storages[i]->tracks().count();
+	}
+}
+
+void QMtpTest::foldersTest(){
+	QVERIFY(qmtp->devicesCount() == 1);
+
+	QMtpDevice *device = qmtp->device(0);
+	QVERIFY(device != NULL);
+
+	device->ScanStorages();
+	device->ScanTracks();
+	device->ScanFolders();
+
+	QList<QMtpFolder *> folders = device->folders();
+	QVERIFY(folders.count() > 0);
+
+//	foreach(QMtpFolder* folder, folders){
+//		qDebug() << "FOLDER: " << folder->name() << folder->folders().count();
+//	}
+
+	qDebug() << "Device folders:" << folders.count();
+
+	QList<QMtpStorage *> storages = device->storages();
+	QVERIFY(storages.count() > 0);
+
+	for(int i = 0; i < storages.count(); i++){
+		qDebug() << storages[i]->description()
+				<< "folders:" <<
+				storages[i]->folders().count();
 	}
 }
 

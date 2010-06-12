@@ -49,7 +49,7 @@ QString QMtpStorage::volumeIdentifier(){
 bool QMtpStorage::filter(QMtpIdentifiable * object){
 	QMtpObject *identifyabloObject = dynamic_cast<QMtpObject *>(object);
 	if(identifyabloObject != NULL){
-		return identifyabloObject->storageID() == _id;
+		return identifyabloObject->storageID() == id();
 	}
 	return false;
 }

@@ -13,29 +13,29 @@ QMtpFolder::QMtpFolder(LIBMTP_folder_t * folder)
 QMtpFolder::~QMtpFolder(){}
 
 bool QMtpFolder::filter(QMtpIdentifiable * object){
-	QMtpObject *identifyabloObject = dynamic_cast<QMtpObject *>(object);
-	if(identifyabloObject != NULL){
-		return identifyabloObject->storageID() == id();
+	QMtpObject *identifyableObject = dynamic_cast<QMtpObject *>(object);
+	if(identifyableObject != NULL){
+		return identifyableObject->parentID() == id();
 	}
 	return false;
 }
 
 void QMtpFolder::ScanFiles(QMtpCollection *collection){
-	Scan(&files, collection);
+	Scan(&_files, collection);
 }
 
 void QMtpFolder::ScanAlbums(QMtpCollection *collection){
-	Scan(&albums, collection);
+	Scan(&_albums, collection);
 }
 
 void QMtpFolder::ScanPlaylists(QMtpCollection *collection){
-	Scan(&playlists, collection);
+	Scan(&_playlists, collection);
 }
 
 void QMtpFolder::ScanFolders(QMtpCollection *collection){
-	Scan(&folders, collection);
+	Scan(&_folders, collection);
 }
 
 void QMtpFolder::ScanTracks(QMtpCollection *collection){
-	Scan(&tracks, collection);
+	Scan(&_tracks, collection);
 }
